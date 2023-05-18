@@ -1,0 +1,391 @@
+2023-05-09T14:15:14.218Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:15.266Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:15.987Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:16.659Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:17.294Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:17.812Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:18.347Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:18.898Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:19.331Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-09T14:15:21.161Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-10T07:06:50.729Z [[31merror[39m]: There is an Error!
+2023-05-10T07:09:19.639Z [[31merror[39m]: There is an Error!
+2023-05-10T07:09:20.635Z [[31merror[39m]: There is an Error!
+2023-05-10T07:09:21.135Z [[31merror[39m]: There is an Error!
+2023-05-10T07:09:21.380Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:21.186Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:22.209Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:22.733Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:22.968Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:23.229Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:33.138Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:33.739Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:34.154Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:34.993Z [[31merror[39m]: There is an Error!
+2023-05-10T07:12:35.513Z [[31merror[39m]: There is an Error!
+2023-05-10T07:17:25.151Z [[31merror[39m]: There is an Error!
+2023-05-10T07:28:47.809Z [[31merror[39m]: test
+2023-05-10T07:28:49.259Z [[31merror[39m]: test
+2023-05-10T07:28:57.359Z [[31merror[39m]: test
+2023-05-10T07:28:57.426Z [[31merror[39m]: test
+2023-05-10T07:38:00.201Z [[31merror[39m]: test
+2023-05-10T07:38:04.691Z [[31merror[39m]: test
+2023-05-10T09:43:33.975Z [[31merror[39m]: test
+2023-05-10T09:54:11.596Z [[31merror[39m]: test
+2023-05-10T10:03:54.721Z [[31merror[39m]: crypto is not defined
+2023-05-10T10:03:58.324Z [[31merror[39m]: Unexpected token } in JSON at position 86
+2023-05-10T10:04:12.813Z [[31merror[39m]: crypto is not defined
+2023-05-10T10:04:31.008Z [[31merror[39m]: crypto is not defined
+2023-05-10T10:04:44.725Z [[31merror[39m]: user is not defined
+2023-05-10T10:05:05.683Z [[31merror[39m]: User validation failed: email: is invalid
+2023-05-10T10:05:11.035Z [[31merror[39m]: User validation failed: email: is invalid
+2023-05-10T10:05:14.455Z [[31merror[39m]: User validation failed: email: is invalid
+2023-05-10T10:05:19.085Z [[31merror[39m]: user is not defined
+2023-05-10T10:05:41.091Z [[31merror[39m]: user is not defined
+2023-05-10T10:05:48.126Z [[31merror[39m]: jwt is not defined
+2023-05-10T10:07:09.182Z [[31merror[39m]: secret is not defined
+2023-05-10T10:59:00.471Z [[31merror[39m]: error connecting to MongoDB:
+2023-05-10T11:08:31.373Z [[31merror[39m]: jwt is not defined
+2023-05-10T11:08:43.493Z [[31merror[39m]: config is not defined
+2023-05-10T11:10:07.590Z [[31merror[39m]: res is not a function
+2023-05-10T11:23:39.297Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:40.538Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:41.890Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:42.842Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:43.847Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:44.737Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:45.374Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:23:52.487Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:25:43.949Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:25:45.162Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:33:32.222Z [[31merror[39m]: Cast to ObjectId failed for value "3" (type string) at path "_id" for model "User"
+2023-05-10T11:33:33.333Z [[31merror[39m]: Cast to ObjectId failed for value "3" (type string) at path "_id" for model "User"
+2023-05-10T11:33:51.290Z [[31merror[39m]: Cast to ObjectId failed for value "s" (type string) at path "_id" for model "User"
+2023-05-10T11:34:50.209Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: username_1 dup key: { username: "tesstusername" }
+2023-05-10T11:34:54.508Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:34:58.565Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:35:28.523Z [[31merror[39m]: Unexpected token } in JSON at position 106
+2023-05-10T11:35:31.117Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:35:41.031Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:35:50.358Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:36:32.304Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:36:34.059Z [[31merror[39m]: E11000 duplicate key error collection: demoAppTEST.users index: tel_1 dup key: { tel: null }
+2023-05-10T11:37:06.455Z [[31merror[39m]: E11000 duplicate key error collection: demsoAppTEST.users index: username_1 dup key: { username: "tesstsqwdasusername" }
+2023-05-10T11:37:10.620Z [[31merror[39m]: E11000 duplicate key error collection: demsoAppTEST.users index: email_1 dup key: { email: "tessssasst@gmail.com" }
+2023-05-10T11:41:02.591Z [[31merror[39m]: Cast to ObjectId failed for value "645b81df7bf801c5e53e1f31s" (type string) at path "_id" for model "User"
+2023-05-10T11:41:03.658Z [[31merror[39m]: Cast to ObjectId failed for value "645b81df7bf801c5e53e1f31s" (type string) at path "_id" for model "User"
+2023-05-10T11:41:06.790Z [[31merror[39m]: Cast to ObjectId failed for value "645b81df7bf801c5e53e1f3s" (type string) at path "_id" for model "User"
+2023-05-10T11:42:00.147Z [[31merror[39m]: user.remove is not a function
+2023-05-10T11:42:24.959Z [[31merror[39m]: User.remove is not a function
+2023-05-10T11:42:36.564Z [[31merror[39m]: user.remove is not a function
+2023-05-10T11:49:23.260Z [[31merror[39m]: Cannot read properties of null (reading 'save')
+2023-05-10T12:45:38.743Z [[31merror[39m]: jwt is not defined
+2023-05-10T12:45:53.253Z [[31merror[39m]: req.res is not a function
+2023-05-10T12:46:07.519Z [[31merror[39m]: req.json is not a function
+2023-05-10T12:46:08.986Z [[31merror[39m]: req.json is not a function
+2023-05-10T12:50:42.461Z [[31merror[39m]: invalid token
+2023-05-10T14:02:18.767Z [[31merror[39m]: User validation failed: email: is invalid
+2023-05-10T14:05:05.570Z [[31merror[39m]: role is not defined
+2023-05-10T14:05:35.354Z [[31merror[39m]: user.role is not a function
+2023-05-10T14:11:36.662Z [[31merror[39m]: E11000 duplicate key error collection: 63861c0f2b82e64e2438aef0_demsoAppTEST.users index: email_1 dup key: { email: "test@gmail.com" }
+2023-05-10T14:37:30.740Z [[31merror[39m]: BlacklistToken is not defined
+2023-05-10T14:38:09.527Z [[31merror[39m]: BlacklistToken is not defined
+2023-05-10T14:54:05.751Z [[31merror[39m]: Unexpected end of JSON input
+2023-05-10T14:54:06.708Z [[31merror[39m]: Unexpected end of JSON input
+2023-05-10T14:54:39.728Z [[31merror[39m]: Unexpected end of JSON input
+2023-05-10T14:54:40.583Z [[31merror[39m]: Unexpected end of JSON input
+2023-05-10T15:13:34.109Z [[31merror[39m]: Unexpected token } in JSON at position 59
+2023-05-10T15:17:15.446Z [[31merror[39m]: jwt expired
+2023-05-10T15:17:20.267Z [[31merror[39m]: jwt expired
+2023-05-10T15:17:24.534Z [[31merror[39m]: jwt expired
+2023-05-10T15:17:25.218Z [[31merror[39m]: jwt expired
+2023-05-10T15:17:25.739Z [[31merror[39m]: jwt expired
+2023-05-10T15:17:28.493Z [[31merror[39m]: jwt expired
+2023-05-10T15:17:29.801Z [[31merror[39m]: jwt expired
+2023-05-10T15:18:11.289Z [[31merror[39m]: jwt expired
+2023-05-10T15:18:52.247Z [[31merror[39m]: jwt malformed
+2023-05-11T06:11:54.105Z [[31merror[39m]: jwt malformed
+2023-05-11T06:11:56.401Z [[31merror[39m]: jwt malformed
+2023-05-11T07:34:35.273Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:37.215Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:38.353Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:39.291Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:39.997Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:40.619Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:41.112Z [[31merror[39m]: assets is not defined
+2023-05-11T07:34:41.725Z [[31merror[39m]: assets is not defined
+2023-05-11T07:35:07.288Z [[31merror[39m]: assets is not defined
+2023-05-11T07:48:23.238Z [[31merror[39m]: Unexpected field
+2023-05-11T07:48:24.492Z [[31merror[39m]: Unexpected field
+2023-05-11T07:48:25.609Z [[31merror[39m]: Unexpected field
+2023-05-11T07:48:26.516Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:12.546Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:13.571Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:14.248Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:14.630Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:14.981Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:41.524Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:42.871Z [[31merror[39m]: Unexpected field
+2023-05-11T07:55:43.609Z [[31merror[39m]: Unexpected field
+2023-05-11T07:57:38.024Z [[31merror[39m]: ENOENT: no such file or directory, open 'uploads/assets/original/Screenshot 2023-04-01 125121.png'
+2023-05-11T08:00:15.062Z [[31merror[39m]: ENOENT: no such file or directory, open 'uploads/assets/original/eski.png'
+2023-05-11T08:05:24.114Z [[31merror[39m]: Unexpected field
+2023-05-11T08:05:32.740Z [[31merror[39m]: Unexpected field
+2023-05-11T08:05:40.649Z [[31merror[39m]: Unexpected field
+2023-05-11T08:07:39.298Z [[31merror[39m]: Unexpected field
+2023-05-11T08:07:51.254Z [[31merror[39m]: Unexpected field
+2023-05-11T08:12:23.025Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-11T08:14:35.963Z [[31merror[39m]: Unexpected field
+2023-05-11T08:14:54.135Z [[31merror[39m]: File too large
+2023-05-11T08:15:19.324Z [[31merror[39m]: Unexpected field
+2023-05-11T08:16:21.145Z [[31merror[39m]: Unexpected field
+2023-05-11T08:28:24.471Z [[31merror[39m]: Unexpected field
+2023-05-11T08:28:34.451Z [[31merror[39m]: Unexpected field
+2023-05-11T08:28:45.469Z [[31merror[39m]: Cannot read properties of undefined (reading 'forEach')
+2023-05-11T08:28:58.332Z [[31merror[39m]: Unexpected field
+2023-05-11T08:30:18.292Z [[31merror[39m]: Cannot read properties of undefined (reading 'forEach')
+2023-05-11T09:00:17.480Z [[31merror[39m]: path is not defined
+2023-05-11T09:00:29.965Z [[31merror[39m]: savedAsset is not defined
+2023-05-11T09:14:20.849Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796460833.jpg' -> 'uploads/assets/originals/645cb1ec0e57fc015189689e.jpg'
+2023-05-11T09:14:44.364Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796484359.jpg' -> 'uploads/assets/originals/645cb2040e57fc01518968a0.jpg'
+2023-05-11T09:14:57.964Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796497938.jpg' -> 'uploads/assets/originals/645cb211f10ab25b173c32fa.jpg'
+2023-05-11T09:16:18.906Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796578889.jpg' -> 'uploads/assets/originals/645cb2624495226c5042c249.jpg'
+2023-05-11T09:16:37.344Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796597337.png' -> 'uploads/assets/originals/645cb2754495226c5042c24d.png'
+2023-05-11T09:17:12.107Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796632079.png' -> 'uploads/assets/originals/645cb29856741cae873f1512.png'
+2023-05-11T09:17:24.953Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796644919.png' -> 'uploads/assets/originals/645cb2a42bb8fc72593d3333.png'
+2023-05-11T09:17:34.119Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796654102.png' -> 'uploads/assets/originals/645cb2aeb606bc553b0285c9.png'
+2023-05-11T09:17:45.729Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796665707.png' -> 'uploads/assets/originals/645cb2b90178c948dd6a630a.png'
+2023-05-11T09:17:47.523Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1683796667519.png' -> 'uploads/assets/originals/645cb2bb0178c948dd6a630f.png'
+2023-05-11T09:18:22.784Z [[31merror[39m]: uploads/assets/presentation/645cb2de0178c948dd6a6311_presentation.png: unable to open for write
+unix error: No such file or directory
+2023-05-11T09:22:52.619Z [[31merror[39m]: invalid token
+2023-05-11T10:10:32.397Z [[31merror[39m]: undefined
+2023-05-11T10:12:59.934Z [[31merror[39m]: Operation `assets.find()` buffering timed out after 10000ms
+2023-05-11T10:13:16.922Z [[31merror[39m]: Operation `assets.findOne()` buffering timed out after 10000ms
+2023-05-11T10:13:22.019Z [[31merror[39m]: Operation `assets.findOne()` buffering timed out after 10000ms
+2023-05-15T10:55:28.212Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-15T12:46:53.612Z [[31merror[39m]: jwt expired
+2023-05-15T12:46:54.769Z [[31merror[39m]: jwt expired
+2023-05-15T13:30:11.851Z [[31merror[39m]: jwt malformed
+2023-05-15T13:30:12.252Z [[31merror[39m]: jwt malformed
+2023-05-16T06:06:24.835Z [[31merror[39m]: jwt expired
+2023-05-16T06:06:39.864Z [[31merror[39m]: jwt expired
+2023-05-16T06:07:00.566Z [[31merror[39m]: jwt expired
+2023-05-16T06:07:00.805Z [[31merror[39m]: jwt expired
+2023-05-16T06:07:05.950Z [[31merror[39m]: jwt expired
+2023-05-16T06:07:06.145Z [[31merror[39m]: jwt expired
+2023-05-16T06:07:25.055Z [[31merror[39m]: jwt expired
+2023-05-16T06:07:27.929Z [[31merror[39m]: jwt expired
+2023-05-16T06:32:07.301Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-16T06:32:11.491Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-16T06:32:18.179Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: email_1 dup key: { email: "test@test.com" }
+2023-05-16T07:21:28.781Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:30.987Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:31.449Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:31.658Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:31.831Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:32.003Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:32.200Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:32.384Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:32.555Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:32.737Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:32.931Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:33.146Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:33.372Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:33.594Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:33.837Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:34.368Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:34.785Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:35.093Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:35.384Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:35.653Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:57.101Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:57.355Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:57.756Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:57.930Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:58.102Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:58.269Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:58.466Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:58.622Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:59.095Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:21:59.653Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:22:55.038Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:23:14.544Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:23:20.640Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:23:28.311Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:23:42.121Z [[31merror[39m]: User validation failed: username: can't be blank
+2023-05-16T07:25:30.873Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-16T07:25:33.545Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-16T08:25:33.855Z [[31merror[39m]: Cannot destructure property 'mimetype' of 'req.file' as it is undefined.
+2023-05-16T08:29:51.200Z [[31merror[39m]: Cannot destructure property 'mimetype' of 'req.file' as it is undefined.
+2023-05-16T08:42:46.817Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1684226566810.jpg' -> 'uploads/assets/original/64634206be9ad896c0a1a71f.jpg'
+2023-05-16T08:43:23.151Z [[31merror[39m]: ENOENT: no such file or directory, rename 'uploads/assets/temp/1684226603146.jpg' -> 'uploads/assets/original/6463422bbe9ad896c0a1a721.jpg'
+2023-05-16T08:47:06.727Z [[31merror[39m]: Cannot destructure property 'mimetype' of 'req.file' as it is undefined.
+2023-05-16T10:12:20.023Z [[31merror[39m]: tags is not defined
+2023-05-16T10:15:04.750Z [[31merror[39m]: Image to composite must have same dimensions or smaller
+2023-05-16T10:15:18.818Z [[31merror[39m]: Asset validation failed: title: Cast to string failed for value "[ 'test', 'test' ]" (type Array) at path "title"
+2023-05-16T10:15:29.460Z [[31merror[39m]: Asset validation failed: title: Cast to string failed for value "[ 'test', 'test' ]" (type Array) at path "title"
+2023-05-16T11:01:05.326Z [[31merror[39m]: undefined
+2023-05-16T11:39:07.925Z [[31merror[39m]: Cast to embedded failed for value "{
+  _id: false,
+  assetId: '64636b5b055b65490f184c1e',
+  ownershipType: 'creator'
+}" (type Object) at path "ownedAssets" because of "CastError"
+2023-05-16T11:39:54.190Z [[31merror[39m]: Cast to embedded failed for value "{
+  _id: false,
+  assetId: '64636b8a055b65490f184c23',
+  ownershipType: 'creator'
+}" (type Object) at path "ownedAssets" because of "CastError"
+2023-05-16T11:58:13.393Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:36.884Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:38.306Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:41.025Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:41.534Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:41.781Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:42.024Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:42.269Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:42.418Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:42.548Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:42.740Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T11:58:42.900Z [[31merror[39m]: Expected width, height and channels for raw pixel input
+2023-05-16T12:02:45.625Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:02:46.817Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:02:55.771Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:02:59.047Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:03:01.151Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:03:01.829Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:03:02.070Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:03:02.415Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:03:02.551Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T12:03:02.613Z [[31merror[39m]: inputImage.width is not a function
+2023-05-16T13:48:17.604Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "sepp" }
+2023-05-16T13:48:38.801Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: email_1 dup key: { email: "yusuf@saruhanweb.com" }
+2023-05-16T13:50:51.346Z [[31merror[39m]: Cast to ObjectId failed for value "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjM4OWMxNDc0NDcxNjdmYTA0MzY5MSIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQyNDUwMzUsImV4cCI6MTY4NDI0ODYzNX0.fjQEsOYKJaf4cXttZhKP_V__8lNLvnvHc43-K_HM8_g" (type string) at path "_id" for model "User"
+2023-05-16T13:51:38.125Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-17T07:12:15.719Z [[31merror[39m]: Cast to ObjectId failed for value "upload" (type string) at path "_id" for model "Asset"
+2023-05-17T07:12:25.482Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:12:27.135Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:14.505Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:15.123Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:15.538Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:15.934Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:16.200Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:16.519Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:16.846Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:17.121Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:17.404Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:17.778Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:18.054Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:18.318Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:18.579Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:18.835Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:19.110Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:19.228Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:19.513Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:19.617Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:36.699Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:13:38.766Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:16:27.790Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:16:28.724Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:16:29.561Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:16:33.287Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:16:52.548Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:17:12.355Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:17:26.901Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:17:27.833Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:17:44.370Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:17:45.216Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:19:04.507Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:19:05.330Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:21:56.521Z [[31merror[39m]: Cast to ObjectId failed for value "ownedBy" (type string) at path "_id" for model "Asset"
+2023-05-17T07:44:10.464Z [[31merror[39m]: Input file contains unsupported image format
+2023-05-17T07:47:36.826Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T07:52:30.882Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:01:45.075Z [[31merror[39m]: Image to composite must have same dimensions or smaller
+2023-05-17T08:06:55.444Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:12:27.949Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:16:04.420Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:16:14.873Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:16:21.008Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:17:27.896Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:18:55.606Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:39:33.661Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-05-17T08:39:46.820Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:39:54.866Z [[31merror[39m]: File too large
+2023-05-17T08:39:56.936Z [[31merror[39m]: File too large
+2023-05-17T08:40:14.067Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:40:30.875Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:40:38.584Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:43:41.029Z [[31merror[39m]: Error: You can Only Upload Images!!
+2023-05-17T08:54:52.410Z [[31merror[39m]: File too large
+2023-05-17T08:58:16.882Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:58:28.918Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:59:36.408Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T08:59:45.682Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T09:01:29.399Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-17T09:03:25.680Z [[31merror[39m]: Cannot destructure property 'mimetype' of 'req.file' as it is undefined.
+2023-05-17T10:37:12.226Z [[31merror[39m]: File too large
+2023-05-17T11:58:09.015Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:09.020Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:09.024Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:09.028Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:10.014Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:10.021Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:10.025Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:10.030Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:26.395Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T11:58:26.401Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:06:26.031Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:06:26.038Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:06:29.309Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:06:29.314Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:07:11.055Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:07:11.059Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:07:11.063Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:07:11.070Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:56:10.018Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:56:14.015Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:56:23.011Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:56:25.218Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T12:56:35.359Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
+2023-05-17T13:56:12.764Z [[31merror[39m]: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "Asset"
+2023-05-17T13:56:16.948Z [[31merror[39m]: Cast to ObjectId failed for value "safas" (type string) at path "_id" for model "Asset"
