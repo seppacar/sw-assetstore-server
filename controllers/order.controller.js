@@ -1,31 +1,43 @@
-const Order = require('../models/order.model')
+const orderService = require('../services/orderService')
 
-const getAllOrders = async (req, res) => {
-  const orders = await Order.find({})
-  res.json(orders)
-}
 const createOrder = async (req, res) => {
   const userId = req.user.id
   const { items, paymentMethod } = req.body
-  // Calculate total price here
-  const totalPrice = 0
+  const newOrder = await orderService.createOrder(userId, items, paymentMethod)
 
-  const newOrder = new Order({ userId, items, paymentMethod, totalPrice })
-  await newOrder.save()
-  return res.json(newOrder)
+  res.json(newOrder)
+}
+// Admin
+const getAllOrders = async (req, res) => {
+  const orders = await orderService.getAllOrders()
+
+  res.json(orders)
 }
 
-const deleteOrder = async (req, res) => {
-  res.json('')
+const getOrderById = async (req, res) => {
+  const orderId = req.params.id
+  const order = await orderService.getOrderById(orderId)
+
+  res.json(order)
 }
 
+// Admin
+const deleteOrderById = async (req, res) => {
+  const orderId = req.params.id
+  const deletedOrder = await orderService.deleteOrderById(orderId)
+  res.json(deletedOrder)
+}
+
+// Admin
 const updateOrder = async (req, res) => {
   res.json('')
 }
 
 module.exports = {
-  getAllOrders,
   createOrder,
-  deleteOrder,
-  updateOrder
+  getAllOrders,
+  getOrderById,
+  updateOrder,
+  deleteOrderById
+
 }

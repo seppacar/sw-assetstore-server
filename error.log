@@ -389,3 +389,142 @@ unix error: No such file or directory
 2023-05-17T12:56:35.359Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Asset"
 2023-05-17T13:56:12.764Z [[31merror[39m]: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "Asset"
 2023-05-17T13:56:16.948Z [[31merror[39m]: Cast to ObjectId failed for value "safas" (type string) at path "_id" for model "Asset"
+2023-05-18T06:40:01.742Z [[31merror[39m]: Cannot read properties of undefined (reading 'id')
+2023-05-18T06:42:01.126Z [[31merror[39m]: Order validation failed: paymentMethod: Path `paymentMethod` is required.
+2023-05-18T06:43:01.107Z [[31merror[39m]: Order validation failed: paymentMethod: `cashmoney` is not a valid enum value for path `paymentMethod`.
+2023-05-18T06:57:20.883Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required., user: Path `user` is required., payment.status: `pendingPayment` is not a valid enum value for path `payment.status`.
+2023-05-18T06:57:43.180Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required., user: Path `user` is required., payment.status: `pendingPayment` is not a valid enum value for path `payment.status`.
+2023-05-18T06:58:04.220Z [[31merror[39m]: Unexpected token } in JSON at position 96
+2023-05-18T06:58:05.139Z [[31merror[39m]: Unexpected token } in JSON at position 96
+2023-05-18T06:58:06.553Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required., user: Path `user` is required., payment.status: `pendingPayment` is not a valid enum value for path `payment.status`.
+2023-05-18T06:58:28.350Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required., payment.status: `pendingPayment` is not a valid enum value for path `payment.status`.
+2023-05-18T06:58:42.146Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T06:58:58.269Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T06:58:58.682Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T06:58:59.769Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T07:01:48.304Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T07:02:02.308Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T07:02:05.315Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T07:10:47.710Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.totalPrice: Path `payment.totalPrice` is required.
+2023-05-18T07:20:30.647Z [[31merror[39m]: Unexpected number in JSON at position 152
+2023-05-18T07:21:10.336Z [[31merror[39m]: Unexpected number in JSON at position 148
+2023-05-18T07:28:28.912Z [[31merror[39m]: Image to composite must have same dimensions or smaller
+2023-05-18T07:28:59.357Z [[31merror[39m]: Image to composite must have same dimensions or smaller
+2023-05-18T07:29:09.623Z [[31merror[39m]: Image to composite must have same dimensions or smaller
+2023-05-18T07:33:48.165Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "admin" }
+2023-05-18T07:44:34.924Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required., payment.amount: Path `payment.amount` is required.
+2023-05-18T07:45:25.969Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required.
+2023-05-18T07:47:52.129Z [[31merror[39m]: Order validation failed: payment.method: Path `payment.method` is required.
+2023-05-18T07:50:14.936Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:50:25.994Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:50:45.857Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:51:27.091Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:51:29.116Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:51:30.163Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:30.926Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:35.241Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:37.249Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:53.108Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:54.023Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:54.833Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:55.467Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:56.080Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:53:56.883Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:54:21.873Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:54:22.464Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:54:22.805Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:54:22.997Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:54:23.720Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T07:59:50.243Z [[31merror[39m]: Order validation failed: payment.method: `ceditCard` is not a valid enum value for path `payment.method`.
+2023-05-18T08:00:04.038Z [[31merror[39m]: Order validation failed: payment.method: `test` is not a valid enum value for path `payment.method`.
+2023-05-18T08:10:00.259Z [[31merror[39m]: Order validation failed: payment.method: `cryptoCurrency` is not a valid enum value for path `payment.method`.
+2023-05-18T11:16:32.593Z [[31merror[39m]: Unexpected token } in JSON at position 106
+2023-05-18T11:16:48.112Z [[31merror[39m]: Unexpected token } in JSON at position 106
+2023-05-18T11:16:54.050Z [[31merror[39m]: userService.createUser is not a constructor
+2023-05-18T11:19:03.355Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "tesstsasusername" }
+2023-05-18T11:19:09.991Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "tesstsasusername" }
+2023-05-18T11:19:52.917Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "qw" }
+2023-05-18T11:19:57.141Z [[31merror[39m]: newUser.toAuthToken is not a function
+2023-05-18T11:20:13.896Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "q2w" }
+2023-05-18T11:20:54.570Z [[31merror[39m]: User validation failed: email: is invalid
+2023-05-18T11:21:08.660Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:21:10.346Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:21:11.068Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:21:11.497Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:21:12.376Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:21:12.990Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:21:13.383Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T11:22:50.870Z [[31merror[39m]: Cast to ObjectId failed for value "645bb05b8a0495205812de49b2" (type string) at path "_id" for model "User"
+2023-05-18T11:22:54.180Z [[31merror[39m]: Cast to ObjectId failed for value "645bb05b8a0495205812de4124219b2" (type string) at path "_id" for model "User"
+2023-05-18T11:23:00.787Z [[31merror[39m]: User not found
+2023-05-18T11:38:08.841Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received an instance of model
+2023-05-18T11:47:45.960Z [[31merror[39m]: Intentional unhandled exception
+2023-05-18T11:47:47.392Z [[31merror[39m]: Intentional unhandled exception
+2023-05-18T11:47:48.362Z [[31merror[39m]: Intentional unhandled exception
+2023-05-18T11:47:49.277Z [[31merror[39m]: Intentional unhandled exception
+2023-05-18T11:51:53.047Z [[31merror[39m]: Intentional unhandled exception
+2023-05-18T11:52:29.527Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "test" }
+2023-05-18T12:11:58.030Z [[31merror[39m]: User not found
+2023-05-18T12:12:00.523Z [[31merror[39m]: User not found
+2023-05-18T12:12:19.218Z [[31merror[39m]: User not found
+2023-05-18T12:13:09.272Z [[31merror[39m]: User not found
+2023-05-18T12:17:09.392Z [[31merror[39m]: Operation `users.findOne()` buffering timed out after 10000ms
+2023-05-18T12:17:18.877Z [[31merror[39m]: Operation `users.findOne()` buffering timed out after 10000ms
+2023-05-18T12:18:07.778Z [[31merror[39m]: Cast to ObjectId failed for value "645bb05b8a0249505812de49b" (type string) at path "_id" for model "User"
+2023-05-18T12:18:10.681Z [[31merror[39m]: User not found
+2023-05-18T12:18:48.760Z [[31merror[39m]: User not found
+2023-05-18T12:18:49.883Z [[31merror[39m]: User not found
+2023-05-18T12:18:50.456Z [[31merror[39m]: User not found
+2023-05-18T12:18:51.782Z [[31merror[39m]: User not found
+2023-05-18T12:18:52.174Z [[31merror[39m]: User not found
+2023-05-18T12:18:52.619Z [[31merror[39m]: User not found
+2023-05-18T12:18:52.996Z [[31merror[39m]: User not found
+2023-05-18T12:18:54.593Z [[31merror[39m]: User not found
+2023-05-18T12:19:55.044Z [[31merror[39m]: User not found
+2023-05-18T12:19:56.017Z [[31merror[39m]: User not found
+2023-05-18T12:20:53.054Z [[31merror[39m]: User not found
+2023-05-18T12:20:54.105Z [[31merror[39m]: User not found
+2023-05-18T12:20:55.010Z [[31merror[39m]: User not found
+2023-05-18T12:21:22.081Z [[31merror[39m]: Cast to ObjectId failed for value "645bb05b8a04950581de49b" (type string) at path "_id" for model "User"
+2023-05-18T12:21:26.920Z [[31merror[39m]: User not found
+2023-05-18T12:21:28.074Z [[31merror[39m]: User not found
+2023-05-18T12:22:07.178Z [[31merror[39m]: User not found
+2023-05-18T12:22:08.522Z [[31merror[39m]: User not found
+2023-05-18T12:31:14.622Z [[31merror[39m]: User not found
+2023-05-18T12:31:16.020Z [[31merror[39m]: User not found
+2023-05-18T12:39:20.924Z [[31merror[39m]: Cast to ObjectId failed for value "645bb05b8a049505812de4s9b" (type string) at path "_id" for model "User"
+2023-05-18T12:44:44.907Z [[31merror[39m]: Cast to ObjectId failed for value "3" (type string) at path "_id" for model "User"
+2023-05-18T12:44:50.541Z [[31merror[39m]: Cast to ObjectId failed for value "34" (type string) at path "_id" for model "User"
+2023-05-18T12:44:51.284Z [[31merror[39m]: Cast to ObjectId failed for value "34" (type string) at path "_id" for model "User"
+2023-05-18T12:44:52.118Z [[31merror[39m]: Cast to ObjectId failed for value "34" (type string) at path "_id" for model "User"
+2023-05-18T13:13:41.370Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-18T13:13:42.432Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-18T13:13:53.678Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-18T13:14:05.523Z [[31merror[39m]: Cannot set headers after they are sent to the client
+2023-05-18T13:17:35.265Z [[31merror[39m]: Invalid status code: undefined
+2023-05-18T13:18:20.743Z [[31merror[39m]: Invalid status code: undefined
+2023-05-18T13:18:32.736Z [[31merror[39m]: Invalid status code: undefined
+2023-05-18T13:19:54.669Z [[31merror[39m]: User not found
+2023-05-18T13:19:55.746Z [[31merror[39m]: User not found
+2023-05-18T13:20:00.343Z [[31merror[39m]: User not found
+2023-05-18T13:20:02.666Z [[31merror[39m]: Cast to ObjectId failed for value "645bb05b8a049505812de49b2" (type string) at path "_id" for model "User"
+2023-05-18T13:23:24.186Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "q22w" }
+2023-05-18T13:23:26.885Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "q22w" }
+2023-05-18T13:23:30.253Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "q22w" }
+2023-05-18T13:23:36.784Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "2q22w" }
+2023-05-18T13:24:04.317Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: email_1 dup key: { email: "test@gmail.com" }
+2023-05-18T13:24:12.345Z [[31merror[39m]: User not found
+2023-05-18T13:24:14.749Z [[31merror[39m]: Cast to ObjectId failed for value "34" (type string) at path "_id" for model "User"
+2023-05-18T13:25:01.913Z [[31merror[39m]: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "User"
+2023-05-18T13:30:08.650Z [[31merror[39m]: User not found
+2023-05-18T13:53:29.433Z [[31merror[39m]: Order validation failed: payment.method: `creditCards` is not a valid enum value for path `payment.method`.
+2023-05-18T13:53:36.858Z [[31merror[39m]: Cast to ObjectId failed for value "6464ae6c98fa0775ac41bs976" (type string) at path "_id" for model "Asset"
+2023-05-18T14:04:47.690Z [[31merror[39m]: Missing or invalid token
+2023-05-18T14:05:05.046Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp.users index: username_1 dup key: { username: "admin" }
+2023-05-18T14:06:27.581Z [[31merror[39m]: Missing or invalid token
+2023-05-18T14:09:00.779Z [[31merror[39m]: Missing or invalid token
+2023-05-18T14:09:31.241Z [[31merror[39m]: Missing or invalid token
+2023-05-18T14:12:18.928Z [[31merror[39m]: User validation failed: role: `adm` is not a valid enum value for path `role`.
+2023-05-18T14:55:57.307Z [[31merror[39m]: Cannot destructure property 'mimetype' of 'req.file' as it is undefined.
+2023-05-18T14:56:09.939Z [[31merror[39m]: Wrong file type?
+2023-05-18T14:56:34.069Z [[31merror[39m]: Input file contains unsupported image format
