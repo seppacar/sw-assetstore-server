@@ -9,4 +9,8 @@ authRouter
   .route('/logout')
   .get(authController.logout)
 
+authRouter
+  .route('/signup')
+  .post(authController.signUp)
+
 module.exports = authRouter

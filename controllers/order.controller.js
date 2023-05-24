@@ -22,15 +22,16 @@ const getOrderById = async (req, res) => {
 }
 
 // Admin
+// Better not expose to endpoints?
+const updateOrder = async (req, res) => {
+  res.json('')
+}
+
+// Admin
 const deleteOrderById = async (req, res) => {
   const orderId = req.params.id
   const deletedOrder = await orderService.deleteOrderById(orderId)
   res.json(deletedOrder)
-}
-
-// Admin
-const updateOrder = async (req, res) => {
-  res.json('')
 }
 
 module.exports = {

@@ -20,7 +20,14 @@ const logout = async (req, res) => {
   }
 }
 
+const signUp = async (req, res) => {
+  const { username, email, password } = req.body
+  const newUser = await authService.signUp(username, email, password)
+  return res.json(newUser.toAuthJSON())
+}
+
 module.exports = {
   login,
-  logout
+  logout,
+  signUp
 }

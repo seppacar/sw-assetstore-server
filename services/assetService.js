@@ -103,6 +103,7 @@ const createAsset = async (req) => {
 const getAllAssets = async () => {
   return await Asset.find({})
 }
+
 const getAssetById = async (assetId) => {
   const asset = await Asset.findById(assetId)
   if (!asset) {
@@ -112,8 +113,71 @@ const getAssetById = async (assetId) => {
   return asset
 }
 
-const updateAssetById = async () => {
-  return ('todo')
+const getAllAssetsPresentation = async (userId) => {
+  const assets = await Asset.find()
+  const presentations = assets.map(asset => ({
+    id: asset.id,
+    presentationUrl: asset.presentationUrl,
+    title: asset.title,
+    description: asset.description,
+    pricing: asset.pricing,
+    uploadedBy: asset.uploadedBy,
+    uploadedAt: asset.uploadedAt
+  }))
+
+  return presentations
+}
+
+const getAssetPresentation = async (assetId) => {
+  const asset = await Asset.findById(assetId)
+  if (!asset) {
+    throw new Error('Asset not found')
+  }
+  const presentation = {
+    id: asset.id,
+    presentationUrl: asset.presentationUrl,
+    title: asset.title,
+    description: asset.description,
+    pricing: asset.pricing,
+    uploadedBy: asset.uploadedBy,
+    uploadedAt: asset.uploadedAt
+  }
+
+  return presentation
+}
+
+const updateAssetById = async (assetId, assetData) => {
+  try {
+    const updatedAsset = await Asset.findByIdAndUpdate(assetId, assetData, { new: true })
+    console.log('Asset updated:', updatedAsset)
+    return updatedAsset
+  } catch (err) {
+    console.log(err)
+    throw new Error('Failed to update asset')
+  }
+}
+// Function to add soldTo information to the asset
+const addSoldToInfoToAsset = async (assetId, userId) => {
+  try {
+    const user = await User.findById(userId)
+    if (!user) {
+      throw new Error('User not found')
+    }
+
+    const updatedAsset = await Asset.findByIdAndUpdate(assetId, {
+      $push: {
+        soldTo: {
+          userId,
+          username: user.username, // Populate the username from the user object
+          purchasedAt: new Date()
+        }
+      }
+    }, { new: true })
+
+    return updatedAsset
+  } catch (err) {
+    throw new Error('Failed to add soldTo information to asset')
+  }
 }
 
 const deleteAssetById = async () => {
@@ -124,6 +188,9 @@ module.exports = {
   createAsset,
   getAllAssets,
   getAssetById,
+  getAssetPresentation,
   updateAssetById,
-  deleteAssetById
+  deleteAssetById,
+  getAllAssetsPresentation,
+  addSoldToInfoToAsset
 }

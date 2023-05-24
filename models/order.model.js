@@ -12,31 +12,45 @@ const orderSchema = new mongoose.Schema({
     ref: 'Asset',
     required: true
   }],
-  payment: {
-    amount: {
-      type: Number,
+  amount: {
+    USD: {
+      type: String,
       required: true,
-      min: 0 // Ensure totalPrice is a non-negative value
+      min: 0
     },
-    currency: {
+    TRY: {
       type: String,
-      enum: ['USD', 'TRY'],
-      default: 'USD'
+      required: true,
+      min: 0
     },
-    method: {
+    ETH: {
       type: String,
-      enum: ['creditCard', 'cryptocurrency'],
-      required: true
+      required: true,
+      min: 0
     },
-    status: {
+    MATIC: {
       type: String,
-      enum: ['pending', 'completed', 'cancelled'],
-      default: 'pending' // Set default status to 'pendingPayment'
+      required: true,
+      min: 0
+    },
+    AVAX: {
+      type: String,
+      required: true,
+      min: 0
     }
+  },
+  status: {
+    type: String,
+    enum: ['pendingPayment', 'completed', 'cancelled'],
+    default: 'pendingPayment'
   },
   createdAt: {
     type: Date,
     default: Date.now // Set default createdAt to current date and time
+  },
+  completedAt: {
+    type: Date,
+    default: null
   }
 })
 

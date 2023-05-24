@@ -30,7 +30,7 @@ const errorHandler = (err, req, res, next) => {
   if (err.name === 'WrongIdError') {
     return res.status(404).send({ error: 'Wrong ID provided' })
   }
-  return res.status(500).send({ error: 'Something went wrong' })
+  return res.status(500).send({ error: 'Something went wrong: ' + err.message })
 }
 
 module.exports = errorHandler

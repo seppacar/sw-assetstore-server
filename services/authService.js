@@ -33,7 +33,16 @@ const logout = async (authHeader) => {
   }
 }
 
+const signUp = async (username, email, password) => {
+  const role = 'user'
+  const newUser = new User({ username, email, password, role })
+  newUser.setPassword(password)
+  await newUser.save()
+
+  return newUser
+}
 module.exports = {
   login,
-  logout
+  logout,
+  signUp
 }

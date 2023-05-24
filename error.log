@@ -528,3 +528,322 @@ unix error: No such file or directory
 2023-05-18T14:55:57.307Z [[31merror[39m]: Cannot destructure property 'mimetype' of 'req.file' as it is undefined.
 2023-05-18T14:56:09.939Z [[31merror[39m]: Wrong file type?
 2023-05-18T14:56:34.069Z [[31merror[39m]: Input file contains unsupported image format
+2023-05-20T07:23:54.116Z [[31merror[39m]: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Asset"
+2023-05-20T07:24:36.958Z [[31merror[39m]: Asset not found
+2023-05-20T07:35:13.023Z [[31merror[39m]: Asset not found
+2023-05-20T07:35:30.120Z [[31merror[39m]: Asset not found
+2023-05-20T07:35:35.662Z [[31merror[39m]: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Asset"
+2023-05-20T10:01:06.063Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:01:08.776Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:01:54.325Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:02:03.844Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:02:05.428Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:03:18.997Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:04:08.883Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:06:05.829Z [[31merror[39m]: HTTP request error: Request failed with status code 400
+2023-05-20T10:06:32.911Z [[31merror[39m]: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-05-20T10:19:30.603Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies.TRY.amount: Cast to Number failed for value "NaN" (type number) at path "amount", amountToPay.0.currencies: Invalid currency
+2023-05-20T10:19:59.551Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies.TRY.amount: Cast to Number failed for value "NaN" (type number) at path "amount", amountToPay.0.currencies: Invalid currency
+2023-05-20T10:20:09.569Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Invalid currency
+2023-05-20T10:20:31.666Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Invalid currency
+2023-05-20T10:21:03.291Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Invalid currency
+2023-05-20T10:21:21.371Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Invalid currency
+2023-05-20T10:21:36.842Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Path `currencies` is required.
+2023-05-20T10:22:01.418Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Path `currencies` is required.
+2023-05-20T10:22:18.883Z [[31merror[39m]: Order validation failed: amountToPay.0.currencies: Invalid currency
+2023-05-20T10:43:36.121Z [[31merror[39m]: Order validation failed: amount.$*: Path `amount.$*` is required., amount: Invalid currency
+2023-05-20T10:44:16.960Z [[31merror[39m]: Order validation failed: amount.$*: Path `amount.$*` is required., amount: Invalid currency
+2023-05-20T10:44:32.742Z [[31merror[39m]: Order validation failed: amount.$*: Path `amount.$*` is required.
+2023-05-20T10:45:25.138Z [[31merror[39m]: Order validation failed: amount.amount: Cast to Number failed for value "{ USD: 100, AVAX: 5.75, TRY: 750 }" (type Object) at path "amount.$*", amount.$*: Path `amount.$*` is required.
+2023-05-20T10:50:35.250Z [[31merror[39m]: Order validation failed: amount.POLY: Path `amount.POLY` is required., amount.ETH: Path `amount.ETH` is required.
+2023-05-20T10:55:53.099Z [[31merror[39m]: Order validation failed: amount.TRY: Cast to Number failed for value "NaN" (type number) at path "amount.TRY", amount.ETH: Cast to Number failed for value "NaN" (type number) at path "amount.ETH", amount.POLY: Cast to Number failed for value "NaN" (type number) at path "amount.POLY", amount.AVAX: Cast to Number failed for value "NaN" (type number) at path "amount.AVAX"
+2023-05-20T10:56:24.228Z [[31merror[39m]: Order validation failed: amount.TRY: Cast to Number failed for value "NaN" (type number) at path "amount.TRY", amount.ETH: Cast to Number failed for value "NaN" (type number) at path "amount.ETH", amount.POLY: Cast to Number failed for value "NaN" (type number) at path "amount.POLY", amount.AVAX: Cast to Number failed for value "NaN" (type number) at path "amount.AVAX"
+2023-05-20T10:56:26.091Z [[31merror[39m]: Order validation failed: amount.TRY: Cast to Number failed for value "NaN" (type number) at path "amount.TRY", amount.ETH: Cast to Number failed for value "NaN" (type number) at path "amount.ETH", amount.POLY: Cast to Number failed for value "NaN" (type number) at path "amount.POLY", amount.AVAX: Cast to Number failed for value "NaN" (type number) at path "amount.AVAX"
+2023-05-20T10:56:41.825Z [[31merror[39m]: Order validation failed: amount.TRY: Cast to Number failed for value "NaN" (type number) at path "amount.TRY", amount.ETH: Cast to Number failed for value "NaN" (type number) at path "amount.ETH", amount.POLY: Cast to Number failed for value "NaN" (type number) at path "amount.POLY", amount.AVAX: Cast to Number failed for value "NaN" (type number) at path "amount.AVAX"
+2023-05-20T10:56:49.485Z [[31merror[39m]: Order validation failed: amount.TRY: Cast to Number failed for value "NaN" (type number) at path "amount.TRY", amount.ETH: Cast to Number failed for value "NaN" (type number) at path "amount.ETH", amount.POLY: Cast to Number failed for value "NaN" (type number) at path "amount.POLY", amount.AVAX: Cast to Number failed for value "NaN" (type number) at path "amount.AVAX"
+2023-05-20T11:00:31.346Z [[31merror[39m]: something about item currency or price is wrong not USD matbe? itemid: 6464ae6c98fa0775ac41b976
+2023-05-20T12:17:56.706Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:17:56.862Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:18:26.820Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:18:34.314Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:18:34.413Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:18:43.615Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:18:43.695Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:18:56.701Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:19:02.787Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:19:10.209Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:19:10.281Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:19:19.967Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:19:35.292Z [[31merror[39m]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Order"
+2023-05-20T12:23:02.436Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:23:02.506Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:23:21.418Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:23:21.489Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:25:55.449Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:25:55.558Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:26:08.236Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:26:09.039Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:26:38.172Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:26:38.244Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-20T12:26:56.842Z [[31merror[39m]: Cast to ObjectId failed for value "6468ba74797cd9656b4e25608" (type string) at path "_id" for model "Order"
+2023-05-22T07:41:45.458Z [[31merror[39m]: Order validation failed: amount.POLY: Path `amount.POLY` is required.
+2023-05-22T07:41:45.551Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-22T07:41:45.624Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-22T10:53:38.665Z [[31merror[39m]: Transaction validation failed: orderId: Cast to ObjectId failed for value "orderıdhere" (type string) at path "orderId" because of "BSONError"
+2023-05-22T10:56:02.855Z [[31merror[39m]: Transaction validation failed: data.chainId: Path `data.chainId` is required.
+2023-05-22T10:58:42.330Z [[31merror[39m]: Transaction validation failed: currency: Path `currency` is required.
+2023-05-22T10:58:51.045Z [[31merror[39m]: Unexpected string in JSON at position 130
+2023-05-22T10:58:53.072Z [[31merror[39m]: Unexpected string in JSON at position 130
+2023-05-22T11:10:09.461Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp1.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "hashstringofthetransactioncrypto" }
+2023-05-22T11:10:11.095Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp1.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "hashstringofthetransactioncrypto" }
+2023-05-22T11:10:11.794Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp1.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "hashstringofthetransactioncrypto" }
+2023-05-22T11:10:12.263Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp1.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "hashstringofthetransactioncrypto" }
+2023-05-22T11:10:12.723Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp1.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "hashstringofthetransactioncrypto" }
+2023-05-22T11:10:32.533Z [[31merror[39m]: E11000 duplicate key error collection: swDemoApp1.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "0xf12b944f1d1e5bcec302b059be9914e12b3505035b9bdf6b03f2505a3bf9edd8" }
+2023-05-22T11:11:54.188Z [[31merror[39m]: Order not found
+2023-05-22T11:11:54.349Z [[31merror[39m]: Order not found
+2023-05-22T11:12:05.733Z [[31merror[39m]: Order not found
+2023-05-22T11:12:05.905Z [[31merror[39m]: Order not found
+2023-05-22T11:12:07.650Z [[31merror[39m]: Asset not found
+2023-05-22T11:12:07.734Z [[31merror[39m]: Asset not found
+2023-05-22T12:03:04.986Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string of odd length into Go value of type common.Hash
+2023-05-22T12:03:14.786Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string of odd length into Go value of type common.Hash
+2023-05-22T12:03:30.999Z [[31merror[39m]: Returned error: invalid argument 0: hex string has length 40, want 64 for common.Hash
+2023-05-22T12:03:42.394Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:03:44.900Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:03:45.627Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:03:46.151Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:03:48.705Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:03:49.077Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:03:49.607Z [[31merror[39m]: Cannot read properties of null (reading 'blockNumber')
+2023-05-22T12:04:34.715Z [[31merror[39m]: Transaction not found
+2023-05-22T12:05:25.120Z [[31merror[39m]: Transaction not found, txHash: 
+2023-05-22T12:05:47.022Z [[31merror[39m]: Transaction not found, txHash: 0x166d2b7717b1f80b3cd5e458f03c1f9b515c56faccaeaf2917747bc0405f62e3
+2023-05-22T12:06:14.741Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string of odd length into Go value of type common.Hash
+2023-05-22T12:06:16.544Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string of odd length into Go value of type common.Hash
+2023-05-22T12:07:43.872Z [[31merror[39m]: transactionService is not a function
+2023-05-22T12:07:45.577Z [[31merror[39m]: transactionService is not a function
+2023-05-22T12:33:41.234Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-22T12:34:10.967Z [[31merror[39m]: The parameter "1241" must be a valid HEX string.
+2023-05-22T12:48:19.915Z [[31merror[39m]: transactionService.validateTransaction is not a function
+2023-05-22T12:51:41.826Z [[31merror[39m]: Unexpected end of JSON input
+2023-05-22T13:07:39.015Z [[31merror[39m]: Invalid chainId
+2023-05-22T13:07:42.014Z [[31merror[39m]: Invalid chainId
+2023-05-22T13:07:43.768Z [[31merror[39m]: Invalid chainId
+2023-05-22T13:07:44.486Z [[31merror[39m]: Invalid chainId
+2023-05-22T13:07:44.888Z [[31merror[39m]: Invalid chainId
+2023-05-22T13:09:31.673Z [[31merror[39m]: getGoerliTransactionDetails is not defined
+2023-05-22T13:14:55.418Z [[31merror[39m]: Unexpected number in JSON at position 105
+2023-05-22T13:15:00.220Z [[31merror[39m]: Unexpected token } in JSON at position 91
+2023-05-22T13:15:21.940Z [[31merror[39m]: Unexpected string in JSON at position 93
+2023-05-22T14:35:04.334Z [[31merror[39m]: Cannot read properties of null (reading 'ownedAssets')
+2023-05-22T14:35:06.372Z [[31merror[39m]: Cannot read properties of null (reading 'ownedAssets')
+2023-05-22T14:39:35.721Z [[31merror[39m]: Cannot read properties of null (reading 'ownedAssets')
+2023-05-22T14:39:37.016Z [[31merror[39m]: Cannot read properties of null (reading 'ownedAssets')
+2023-05-22T14:39:46.379Z [[31merror[39m]: Cannot read properties of null (reading 'ownedAssets')
+2023-05-23T06:27:00.665Z [[31merror[39m]: Order validation failed: amount.AVAX: Path `amount.AVAX` (-0.3367003367003365) is less than minimum allowed value (0)., amount.MATIC: Path `amount.MATIC` (-5.647803004631199) is less than minimum allowed value (0)., amount.ETH: Path `amount.ETH` (-0.00268786134936) is less than minimum allowed value (0)., amount.TRY: Path `amount.TRY` (-99.21533322190581) is less than minimum allowed value (0)., amount.USD: Path `amount.USD` (-5) is less than minimum allowed value (0).
+2023-05-23T06:27:00.790Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T06:27:00.874Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T07:06:18.836Z [[31merror[39m]: Cast to ObjectId failed for value "" (type string) at path "_id" for model "Order"
+2023-05-23T07:07:04.570Z [[31merror[39m]: Cast to ObjectId failed for value "" (type string) at path "_id" for model "Order"
+2023-05-23T07:09:23.049Z [[31merror[39m]: getGoerliTransactionByHash is not a function
+2023-05-23T07:09:25.110Z [[31merror[39m]: getGoerliTransactionByHash is not a function
+2023-05-23T07:27:37.614Z [[31merror[39m]: (USDExchangeRates.MATIC || null).toFixed is not a function
+2023-05-23T07:27:37.715Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T07:27:37.801Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T09:03:27.809Z [[31merror[39m]: Error: [number-to-bn] while converting number "19.8531663333333227" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "19.8531663333333227"
+2023-05-23T09:03:27.924Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T09:03:28.009Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T09:03:42.072Z [[31merror[39m]: Error: [number-to-bn] while converting number "19.8531663333333227" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "19.8531663333333227"
+2023-05-23T09:03:42.178Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T09:03:42.258Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T09:59:11.634Z [[31merror[39m]: Error: [number-to-bn] while converting number "19.852896309113646" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "19.852896309113646"
+2023-05-23T09:59:11.723Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T09:59:11.791Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:26:47.767Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string without 0x prefix into Go value of type common.Hash
+2023-05-23T10:26:49.934Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string without 0x prefix into Go value of type common.Hash
+2023-05-23T10:27:18.323Z [[31merror[39m]: Returned error: invalid argument 0: json: cannot unmarshal hex string without 0x prefix into Go value of type common.Hash
+2023-05-23T10:53:47.291Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.0005389005351282" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.0005389005351282"
+2023-05-23T10:53:47.401Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:53:47.483Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:53:58.567Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.0005389005351282" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.0005389005351282"
+2023-05-23T10:53:58.678Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:53:58.756Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:54:32.464Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.0005389411961261" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.0005389411961261"
+2023-05-23T10:54:32.590Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:54:32.673Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:54:39.944Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.0005389411961261" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.0005389411961261"
+2023-05-23T10:54:40.053Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:54:40.134Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:55:44.378Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.0005388685915053" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.0005388685915053"
+2023-05-23T10:55:44.484Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T10:55:44.666Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T11:48:40.339Z [[31merror[39m]: cryptoAmountWei.string is not a function
+2023-05-23T11:48:40.440Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T11:48:40.506Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:00:37.336Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:00:37.450Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:00:37.532Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:00:47.828Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:00:48.072Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:00:48.322Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:01:05.206Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:01:05.315Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:01:05.397Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:01:25.575Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:01:25.682Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:01:25.768Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:02:13.211Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:02:13.328Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:02:13.421Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:11:33.751Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:11:33.891Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:11:34.037Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:12:35.593Z [[31merror[39m]: num.isZero is not a function
+2023-05-23T12:12:35.725Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:12:35.809Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:13:25.888Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.000000000000000001" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.000000000000000001"
+2023-05-23T12:13:25.990Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:13:26.058Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:14:58.427Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.000000000000000001" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.000000000000000001"
+2023-05-23T12:14:58.540Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:14:58.626Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:15:14.111Z [[31merror[39m]: Error: [number-to-bn] while converting number "0.000000000000000001" to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "0.000000000000000001"
+2023-05-23T12:15:14.215Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:15:14.285Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:16:53.249Z [[31merror[39m]: Invalid array length
+2023-05-23T12:16:53.377Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:16:53.459Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:29:47.414Z [[31merror[39m]: Error: [number-to-bn] while converting number 9.99 to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported. Given value: "9.99"
+2023-05-23T12:29:47.518Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:29:47.585Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:33:10.205Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:33:10.329Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:33:10.400Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:33:27.949Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:33:28.062Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:33:28.130Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:33:43.067Z [[31merror[39m]: Please pass numbers as strings or BN objects to avoid precision errors.
+2023-05-23T12:33:43.199Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:33:43.273Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:34:21.315Z [[31merror[39m]: num.isZero is not a function
+2023-05-23T12:34:21.403Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:34:21.470Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-23T12:46:59.879Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:02.761Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:03.726Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:04.550Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:05.498Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:06.347Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:19.980Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:33.447Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:35.199Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T12:47:36.040Z [[31merror[39m]: Transaction not found, txHash: 0xb463df8efd99dad305204e975b0939c6743d7556a63a5c2bd9165ccd4a6ed14e
+2023-05-23T13:41:52.944Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:04.861Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:05.706Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:06.224Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:06.760Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:07.656Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:08.091Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:08.593Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:10.605Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:20.742Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:21.681Z [[31merror[39m]: Transaction not found
+2023-05-23T13:42:22.189Z [[31merror[39m]: Transaction not found
+2023-05-23T13:44:19.519Z [[31merror[39m]: Transaction not found
+2023-05-23T14:17:23.372Z [[31merror[39m]: Transaction complete and confirmed successfully  for txHash: 0x0c414c01786bcfee9cd7e4c4c791be023803f1217480f1415d3113cc8c2a2520.
+2023-05-23T14:51:42.179Z [[31merror[39m]: password is not defined
+2023-05-23T14:52:00.352Z [[31merror[39m]: password is not defined
+2023-05-23T14:53:49.933Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:54:17.958Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:54:22.637Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:54:22.804Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:55:02.651Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:55:53.723Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:56:15.363Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:56:55.412Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:56:58.182Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:56:58.711Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:56:59.143Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:57:19.110Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:57:22.776Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:57:36.816Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:57:40.123Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:58:00.547Z [[31merror[39m]: username is not defined
+2023-05-23T14:58:01.870Z [[31merror[39m]: username is not defined
+2023-05-23T14:58:14.165Z [[31merror[39m]: userdata is not defined
+2023-05-23T14:58:16.592Z [[31merror[39m]: userdata is not defined
+2023-05-23T14:58:24.512Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:58:26.483Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:58:45.642Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:58:58.355Z [[31merror[39m]: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2023-05-23T14:59:30.477Z [[31merror[39m]: authService.createUser is not a function
+2023-05-23T14:59:38.191Z [[31merror[39m]: newUser.toAuthJson is not a function
+2023-05-23T15:00:47.729Z [[31merror[39m]: E11000 duplicate key error collection: swDemoAppNew.users index: username_1 dup key: { username: "tes" }
+2023-05-23T15:00:52.104Z [[31merror[39m]: newUser.toAuthJson is not a function
+2023-05-23T15:06:52.619Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:07:00.032Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:07:19.130Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:07:35.995Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:07:44.929Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:08:08.693Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:08:37.150Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:10:25.259Z [[31merror[39m]: User validation failed: username: is invalid, email: is invalid
+2023-05-23T15:14:32.124Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:06.324Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:07.805Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:08.321Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:08.503Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:08.669Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:08.828Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:09.009Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:09.185Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:09.366Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:09.516Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:09.683Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:09.850Z [[31merror[39m]: role is not defined
+2023-05-23T15:15:22.061Z [[31merror[39m]: role is not defined
+2023-05-24T07:14:49.547Z [[31merror[39m]: Asset already exists in user's ownedAssets
+2023-05-24T07:15:51.088Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:16:35.438Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:17:30.145Z [[31merror[39m]: Blockchain transaction validation successfully complete for txHash: 0xd1a9c25065644d0d3aa4f3b945ceff7a0ce54ebc964c8a1e2e3ae87cc4c5a326
+2023-05-24T07:17:30.292Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:17:54.786Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:18:13.300Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:18:16.462Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:18:18.313Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:18:21.548Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:19:37.584Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:23:22.242Z [[31merror[39m]: Asset already exists in user's ownedAssets
+2023-05-24T07:23:22.346Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:23:22.436Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:28:36.535Z [[31merror[39m]: Asset already exists in user's ownedAssets
+2023-05-24T07:28:36.641Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:28:36.726Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:30:37.317Z [[31merror[39m]: Blockchain transaction failed for txHash: 0xb6f3e3061613be7ec1c6b4f2820d134214b7f8a2ef464870901e6389863e0f0c
+2023-05-24T07:32:41.602Z [[31merror[39m]: Asset already exists in user's ownedAssets, orderId: 646db583aa823f208b0c24fc, itemId: 646daabaebc96b3b6383d473
+2023-05-24T07:42:45.564Z [[31merror[39m]: Transaction validation failed: method: `cryptocurrency` is not a valid enum value for path `method`.
+2023-05-24T07:43:06.389Z [[31merror[39m]: Unexpected string in JSON at position 270
+2023-05-24T07:43:14.673Z [[31merror[39m]: E11000 duplicate key error collection: swDemoAppNew.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "hashstringofthetransactioncrypto" }
+2023-05-24T07:45:59.297Z [[31merror[39m]: Asset already exists in user's ownedAssets
+2023-05-24T07:45:59.392Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:45:59.473Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:46:16.977Z [[31merror[39m]: Asset already exists in user's ownedAssets
+2023-05-24T07:46:17.063Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:46:17.137Z [[31merror[39m]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Order"
+2023-05-24T07:55:50.217Z [[31merror[39m]: Transaction validation failed: currency: Path `currency` is required., amount: Path `amount` is required.
+2023-05-24T07:57:37.065Z [[31merror[39m]: Unexpected token } in JSON at position 291
+2023-05-24T07:57:40.443Z [[31merror[39m]: Transaction validation failed: status: `complete` is not a valid enum value for path `status`.
+2023-05-24T07:57:54.185Z [[31merror[39m]: Transaction validation failed: status: `success` is not a valid enum value for path `status`.
+2023-05-24T07:58:04.965Z [[31merror[39m]: E11000 duplicate key error collection: swDemoAppNew.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "ha1shstsringofthetransactioncrypto" }
+2023-05-24T07:59:38.461Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c49
+2023-05-24T08:00:03.123Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c49
+2023-05-24T08:00:10.507Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c41
+2023-05-24T08:00:14.994Z [[31merror[39m]: Unexpected token } in JSON at position 291
+2023-05-24T08:00:17.315Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c49
+2023-05-24T08:01:13.144Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c49
+2023-05-24T08:01:54.406Z [[31merror[39m]: E11000 duplicate key error collection: swDemoAppNew.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "ha1shstsringofthetransactioncrypto" }

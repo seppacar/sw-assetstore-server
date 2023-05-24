@@ -10,7 +10,7 @@ orderRouter
 
 orderRouter
   .route('/:id')
-  .get(authAdminMiddleware, orderController.getOrderById)
+  .get(authUserMiddleware, orderController.getOrderById)
   .delete(authAdminMiddleware, orderController.deleteOrderById)
 
 module.exports = orderRouter

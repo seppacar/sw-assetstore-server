@@ -18,6 +18,10 @@ const UserSchema = new mongoose.Schema({
       ownershipType: {
         type: String,
         enum: ['creator', 'buyer', 'other']
+      },
+      ownershipDate: {
+        type: Date,
+        default: Date.now
       }
     }
   ]

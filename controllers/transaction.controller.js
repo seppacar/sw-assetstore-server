@@ -1,27 +1,33 @@
-const Order = require('../models/order.model')
+const transactionService = require('../services/transactionService')
 
-const createTransaction = (req, res) => {
-  res.json('created?')
+const createTransaction = async (req, res) => {
+  const { orderId, method, data } = req.body
+  const transaction = await transactionService.createTransaction(orderId, method, data)
+  res.json(transaction)
+}
+const getAllTransactions = async (req, res) => {
+  const transactions = await transactionService.getAllTransactions()
+  res.json(transactions)
 }
 
-const getAllTransactions = (req, res) => {
-  res.json('yes')
+// Get transaction with hash
+const getTransactionByHash = async (req, res) => {
+  const { hash } = req.params
+  const transaction = await transactionService.getTransactionByHash(hash)
+  res.json(transaction)
 }
 
-// TODO: Will validate payment here
-// Passing orderid as param
-// If payment already done return success
-// If payment method cryptocurrency check hash and orderıd if required confirmations done
-// add assets to buyer document
-// If payment method credit card redirect payment provider here after success or fail so we can check status here
-// validate orderid and do stuff
-// if payment failed do nothing return response
-const validateTransaction = (req, res) => {
-  res.json('Payment success, assets added to owner')
+const validateTransaction = async (req, res) => {
+  const txHash = req.body.txHash
+  transactionService.validateTransaction(txHash)
+  res.json('Validation started')
+  // const confirmations = await transactionService.validateTransaction(req.body.txHash)
+  // res.json(confirmations)
 }
 
 module.exports = {
   getAllTransactions,
   createTransaction,
+  getTransactionByHash,
   validateTransaction
 }

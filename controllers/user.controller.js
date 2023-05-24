@@ -1,8 +1,8 @@
 const userService = require('../services/userService')
 
 const createUser = async (req, res) => {
-  const { username, email, password } = req.body
-  const newUser = await userService.createUser(username, email, password)
+  const { username, email, password, role } = req.body
+  const newUser = await userService.createUser(username, email, password, role)
   return res.json(newUser.toAuthJSON())
 }
 
@@ -32,10 +32,16 @@ const deleteUserById = async (req, res) => {
   res.json({ message })
 }
 
+const getOwnedAssets = async (req, res) => {
+  const userId = req.params.id
+  const ownedAssets = await userService.getOwnedAssets(userId)
+  res.json(ownedAssets)
+}
 module.exports = {
   createUser,
   getAllUsers,
   getUserById,
   updateUserById,
-  deleteUserById
+  deleteUserById,
+  getOwnedAssets
 }

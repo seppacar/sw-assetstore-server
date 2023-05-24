@@ -20,6 +20,7 @@ const AssetSchema = new mongoose.Schema({
   },
   uploadedAt: { type: Date, default: Date.now }, // Date and time when the asset was uploaded
   soldTo: [{ // Information about the users who most recently bought the asset (if sold)
+    _id: false,
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, // ID of the user who bought the asset
     username: { type: String }, // Username of the user who bought the asset
     purchasedAt: { type: Date, default: Date.now() } // Purchase time of the asset by indivudial user
