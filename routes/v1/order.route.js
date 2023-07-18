@@ -1,16 +1,16 @@
 const orderController = require('../../controllers/order.controller')
 const orderRouter = require('express').Router()
-const authUserMiddleware = require('../../middleware/authUserMiddleware')
+const authStandardUserMiddleware = require('../../middleware/authStandardUserMiddleware')
 const authAdminMiddleware = require('../../middleware/authAdminMiddleware')
 
 orderRouter
   .route('/')
   .get(authAdminMiddleware, orderController.getAllOrders)
-  .post(authUserMiddleware, orderController.createOrder)
+  .post(authStandardUserMiddleware, orderController.createOrder)
 
 orderRouter
   .route('/:id')
-  .get(authUserMiddleware, orderController.getOrderById)
+  .get(authStandardUserMiddleware, orderController.getOrderById)
   .delete(authAdminMiddleware, orderController.deleteOrderById)
 
 module.exports = orderRouter

@@ -4,28 +4,38 @@ const jwt = require('jsonwebtoken')
 const config = require('../config')
 
 const UserSchema = new mongoose.Schema({
-  username: { type: String, lowercase: true, required: [true, "can't be blank"], match: [/^[a-zA-Z0-9]+$/, 'is invalid'], unique: true, index: true },
-  email: { type: String, lowercase: true, required: [true, "can't be blank"], match: [/\S+@\S+\.\S+/, 'is invalid'], unique: true, index: true },
-  profilePicture: { type: String, lowercase: true, default: null },
+  username: { type: String, lowercase: true, required: [true, 'Username is required.'], match: [/^[a-zA-Z0-9]+$/, 'Username can only contain letters and numbers.'], unique: true, index: true },
+  email: { type: String, lowercase: true, required: [true, 'Email is required.'], match: [/\S+@\S+\.\S+/, 'Invalid email format.'], unique: true, index: true },
+  profilePicture: { type: String, lowercase: true, default: 'https://cataas.com/cat/says/sw' },
   isEmailVerified: { type: Boolean, default: false },
   isPhoneVerified: { type: Boolean, default: false },
-  role: { type: String, enum: ['user', 'admin'], default: 'user' },
+  role: { type: String, enum: ['admin', 'standardUser', 'sellerUser'], default: 'standardUser' },
+  walletBalance: { type: Number, min: 0, default: 0, required: true },
   hash: String,
   salt: String,
   ownedAssets: [
     {
+      _id: false,
       assetId: { type: mongoose.Schema.Types.ObjectId, ref: 'Asset' }, // ID of the owned bought assets
+      tier: { type: String },
       ownershipType: {
         type: String,
-        enum: ['creator', 'buyer', 'other']
+        enum: ['creation', 'purchase', 'mint', 'other']
       },
       ownershipDate: {
         type: Date,
         default: Date.now
       }
     }
-  ]
-}, { timestamps: true })
+  ],
+  status: {
+    type: String,
+    enum: ['active', 'inactive'],
+    required: true,
+    default: 'active'
+  }
+},
+{ timestamps: true })
 
 UserSchema.methods.setPassword = function (password) {
   this.salt = crypto.randomBytes(16).toString('hex')
@@ -47,9 +57,32 @@ UserSchema.methods.generateJWT = function () {
 
 UserSchema.methods.toAuthJSON = function () {
   return {
+    id: this._id,
+    profilePicture: this.profilePicture,
     username: this.username,
+    role: this.role,
     email: this.email,
     token: this.generateJWT()
+  }
+}
+
+// Update method for users wallet balance
+UserSchema.statics.updateWalletBalance = async function (userId, amount) {
+  try {
+    const user = await this.findById(userId)
+    if (!user) {
+      throw new Error('User not found')
+    }
+
+    const updatedUser = await this.findOneAndUpdate(
+      { _id: userId },
+      { $inc: { walletBalance: amount } },
+      { new: true }
+    )
+
+    return updatedUser.walletBalance
+  } catch (error) {
+    throw new Error('Failed to update wallet balance')
   }
 }
 

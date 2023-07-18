@@ -1,12 +1,13 @@
 const transactionController = require('../../controllers/transaction.controller')
+const { authAdminMiddleware, authStandardUserMiddleware } = require('../../middleware')
 const transactionRouter = require('express').Router()
 
 transactionRouter.route('/')
-  .get(transactionController.getAllTransactions)
-  .post(transactionController.createTransaction)
+  .get(authAdminMiddleware, transactionController.getAllTransactions)
+  .post(authStandardUserMiddleware, transactionController.createTransaction)
 transactionRouter.route('/:hash')
-  .get(transactionController.getTransactionByHash)
+  .get(authStandardUserMiddleware, transactionController.getTransactionByHash)
 transactionRouter.route('/validateTransaction')
-  .post(transactionController.validateTransaction)
+  .post(authStandardUserMiddleware, transactionController.validateTransaction)
 
 module.exports = transactionRouter

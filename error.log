@@ -847,3 +847,5 @@ unix error: No such file or directory
 2023-05-24T08:00:17.315Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c49
 2023-05-24T08:01:13.144Z [[31merror[39m]: Parameter "obj" to Document() must be an object, got 6465c8fdd257b38086fa6c49
 2023-05-24T08:01:54.406Z [[31merror[39m]: E11000 duplicate key error collection: swDemoAppNew.transactions index: data.transactionHash_1 dup key: { data.transactionHash: "ha1shstsringofthetransactioncrypto" }
+2023-07-18T13:34:30.285Z [[31merror[39m]: error connecting to MongoDB:
+2023-07-18T13:34:40.156Z [[31merror[39m]: error connecting to MongoDB:

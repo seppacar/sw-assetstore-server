@@ -1,4 +1,5 @@
-const authUserMiddleware = require('./authUserMiddleware')
+const authStandardUserMiddleware = require('./authStandardUserMiddleware')
+const authSellerUserMiddleware = require('./authSellerUserMiddleware')
 const authAdminMiddleware = require('./authAdminMiddleware')
 const requestLogger = require('./requestLogger')
 const unknownEndpoint = require('./unknownEndpoint')
@@ -9,7 +10,8 @@ module.exports = {
   requestLogger,
   unknownEndpoint,
   errorHandler,
-  authUserMiddleware,
+  authStandardUserMiddleware,
+  authSellerUserMiddleware,
   authAdminMiddleware,
   multer
 }

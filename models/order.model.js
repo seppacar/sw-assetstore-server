@@ -8,9 +8,17 @@ const orderSchema = new mongoose.Schema({
     required: true
   },
   items: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Asset',
-    required: true
+    _id: false,
+    item: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Asset',
+      required: true
+    },
+    tier: {
+      type: String,
+      required: true,
+      default: 'Standard'
+    }
   }],
   amount: {
     USD: {

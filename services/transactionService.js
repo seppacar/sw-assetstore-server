@@ -1,28 +1,58 @@
+const logger = require('../utils/logger')
+const { delay } = require('../utils/common')
+
 const { getEthereumTransactionDetails, getAvalancheTransactionDetails, getPolygonTransactionDetails, getSepoliaTransactionDetails, getGoerliTransactionDetails } = require('../utils/blockchainUtils')
 
 const { completeOrder, getOrderById } = require('../services/orderService')
 
-const { delay } = require('../utils/common')
-
 const Transaction = require('../models/transaction.model')
-const logger = require('../utils/logger')
 
+/**
+ * Creates a new transaction.
+ * @param {string} orderId - The ID of the associated order.
+ * @param {string} method - The method used for the transaction.
+ * @param {Object} data - The data related to the transaction.
+ * @returns {Promise<Object>} The newly created transaction object.
+ */
 const createTransaction = async (orderId, method, data) => {
   const newTransaction = new Transaction({ orderId, method, data })
   await newTransaction.save()
   return newTransaction
 }
 
+/**
+ * Retrieves all transactions from the database.
+ * @returns {Promise<Array>} An array of all transaction objects.
+ */
 const getAllTransactions = async () => {
   const transactions = await Transaction.find({})
   return transactions
 }
 
+/**
+ * Retrieves a transaction by its transaction hash.
+ * @param {string} txHash - The transaction hash.
+ * @returns {Promise<Object>} The transaction object.
+ */
 const getTransactionByHash = async (txHash) => {
   return await Transaction.findOne({ 'data.transactionHash': txHash })
 }
 
-// TODO: Get txhash direct to credit card validation or cryptocurrency validation by type
+/**
+ * Retrieves a transaction by its associated order ID.
+ * @param {string} orderId - The ID of the associated order.
+ * @returns {Promise<Object>} The transaction object.
+ */
+const getTransactionByOrderId = async (orderId) => {
+  return await Transaction.findOne({ orderId })
+}
+
+/**
+ * Validates a transaction by its transaction hash.
+ * @param {string} txHash - The transaction hash.
+ * @returns {Promise<void>}
+ * @throws {Error} If the transaction is not found or if there is an error during validation.
+ */
 const validateTransaction = async (txHash) => {
   const txObject = await Transaction.findOne({ 'data.transactionHash': txHash })
   if (!txObject) {
@@ -35,6 +65,12 @@ const validateTransaction = async (txHash) => {
   }
 }
 
+/**
+ * Validates a blockchain transaction by its transaction hash.
+ * @param {string} txHash - The transaction hash.
+ * @returns {Promise<Object>} The validation result.
+ * @throws {Error} If the transaction is not found or if there is an error during validation.
+ */
 const validateBlockchainTransaction = async (txHash) => {
   const txObject = await Transaction.findOne({ 'data.transactionHash': txHash })
   const chainId = txObject.data.chainId
@@ -83,7 +119,7 @@ const validateBlockchainTransaction = async (txHash) => {
         txDetails = await getGoerliTransactionDetails(txHash)
         orderId = txDetails.inputData
       } catch (error) {
-        console.error('Error retrieving Sepolia transaction details:', error)
+        console.error()
         throw error
       }
       break
@@ -117,7 +153,11 @@ const validateBlockchainTransaction = async (txHash) => {
   }
 }
 
-// Runs validatio mechanism 10 times with 1 minute intervals each call 50 times until done
+/**
+ * Triggers the validation mechanism for a blockchain transaction.
+ * @param {string} txHash - The transaction hash.
+ * @returns {Promise<void>}
+ */
 const triggerValidateBlockchainTransaction = async (txHash) => {
   let counter = 0
   let isSuccess = false
@@ -142,5 +182,6 @@ module.exports = {
   createTransaction,
   getAllTransactions,
   getTransactionByHash,
+  getTransactionByOrderId,
   validateTransaction
 }

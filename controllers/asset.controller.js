@@ -26,10 +26,17 @@ const getAssetPresentation = async (req, res) => {
   res.json({ presentation })
 }
 
+const deleteAssetById = async (req, res) => {
+  const assetId = req.params.id
+  const message = await assetService.deleteAssetById(assetId)
+  res.json({ message })
+}
+
 module.exports = {
   createAsset,
   getAllAssets,
   getAssetById,
   getAllAssetsPresentation,
-  getAssetPresentation
+  getAssetPresentation,
+  deleteAssetById
 }

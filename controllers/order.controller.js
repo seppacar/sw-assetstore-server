@@ -2,8 +2,8 @@ const orderService = require('../services/orderService')
 
 const createOrder = async (req, res) => {
   const userId = req.user.id
-  const { items, paymentMethod } = req.body
-  const newOrder = await orderService.createOrder(userId, items, paymentMethod)
+  const orderData = req.body
+  const newOrder = await orderService.createOrder(userId, orderData)
 
   res.json(newOrder)
 }

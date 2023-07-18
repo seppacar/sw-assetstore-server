@@ -1,5 +1,7 @@
 const Web3 = require('web3')
 
+const config = require('../config')
+
 // Ethereum Web3 instance
 const ethereumWeb3 = new Web3('https://eth.public-rpc.com')
 
@@ -19,6 +21,10 @@ const getEthereumTransactionDetails = async (transactionHash) => {
   const transaction = await ethereumWeb3.eth.getTransaction(transactionHash)
   if (!transaction) {
     throw new Error('Transaction not found, txHash: ' + transactionHash)
+  }
+  // Validate receiver wallet address
+  if (transaction.to !== config.ETHEREUM_WALLET_ADDRESS) {
+    throw new Error('Incorrect receiver wallet: ' + transactionHash)
   }
   const currentBlockNumber = await ethereumWeb3.eth.getBlockNumber()
   const confirmations = currentBlockNumber - transaction.blockNumber
@@ -43,6 +49,10 @@ const getAvalancheTransactionDetails = async (transactionHash) => {
   if (!transaction) {
     throw new Error('Transaction not found, txHash: ' + transactionHash)
   }
+  // Validate receiver wallet address
+  if (transaction.to !== config.ETHEREUM_WALLET_ADDRESS) {
+    throw new Error('Incorrect receiver wallet: ' + transactionHash)
+  }
   const currentBlockNumber = await avalancheWeb3.eth.getBlockNumber()
   const confirmations = currentBlockNumber - transaction.blockNumber
   const inputData = Web3.utils.hexToString(transaction.input)
@@ -66,6 +76,10 @@ const getPolygonTransactionDetails = async (transactionHash) => {
   if (!transaction) {
     throw new Error('Transaction not found, txHash: ' + transactionHash)
   }
+  // Validate receiver wallet address
+  if (transaction.to !== config.ETHEREUM_WALLET_ADDRESS) {
+    throw new Error('Incorrect receiver wallet: ' + transactionHash)
+  }
   const currentBlockNumber = await polygonWeb3.eth.getBlockNumber()
   const confirmations = currentBlockNumber - transaction.blockNumber
   const inputData = Web3.utils.hexToString(transaction.input)
@@ -87,6 +101,10 @@ const getSepoliaTransactionDetails = async (transactionHash) => {
   const transaction = await sepoliaWeb3.eth.getTransaction(transactionHash)
   if (!transaction) {
     throw new Error('Transaction not found, txHash: ' + transactionHash)
+  }
+  // Validate receiver wallet address
+  if (transaction.to !== config.ETHEREUM_WALLET_ADDRESS) {
+    throw new Error('Incorrect receiver wallet: ' + transactionHash)
   }
 
   const currentBlockNumber = await sepoliaWeb3.eth.getBlockNumber()
@@ -111,13 +129,17 @@ const getGoerliTransactionDetails = async (transactionHash) => {
   if (!transaction) {
     throw new Error('Transaction not found, txHash: ' + transactionHash)
   }
+  // Validate receiver wallet address
+  if (transaction.to !== config.ETHEREUM_WALLET_ADDRESS) {
+    throw new Error('Incorrect receiver wallet: ' + transactionHash)
+  }
 
   const currentBlockNumber = await goerliWeb3.eth.getBlockNumber()
   const confirmations = currentBlockNumber - transaction.blockNumber
   // Input is
   const inputData = Web3.utils.hexToString(transaction.input)
   const senderAddress = transaction.from
-
+  console.log(transaction)
   return {
     network: 'Goerli',
     senderAddress,

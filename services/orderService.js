@@ -1,11 +1,20 @@
 const Order = require('../models/order.model')
 
 const { getAssetById, addSoldToInfoToAsset } = require('../services/assetService')
-const { addOwnedAssetAsBuyer, getUserById } = require('../services/userService')
+const { addOwnedAssetAsBuyer, getUserById, updateUserBalance } = require('../services/userService')
 const { getExchangeRatesFor, convertUSDToCrypto } = require('../utils/exchangeRateUtils')
 const logger = require('../utils/logger')
 
-const createOrder = async (userId, items, paymentMethod) => {
+/**
+ * Creates a new order.
+ * @param {string} userId - The ID of the user placing the order.
+ * @param {Array} orderData - The array of order items containing item IDs and tiers.
+ * @param {string} paymentMethod - The payment method used for the order.
+ * @returns {Promise<Object>} The newly created order object.
+ * @throws {Error} If the user is not found, an item already exists in the user's ownedAssets,
+ * or if there is an error during order creation.
+ */
+const createOrder = async (userId, orderData, paymentMethod) => {
   let totalPriceUSD = 0
 
   const user = await getUserById(userId)
@@ -15,20 +24,23 @@ const createOrder = async (userId, items, paymentMethod) => {
 
   // Calculate the total price in USD by summing the pricing.price of each asset
   // items is array of assetId
-  for (const item of items) {
-    // Check if the asset already exists in ownedAssets
-    const existingAsset = user.ownedAssets.find(asset => asset.assetId.equals(item))
-    if (existingAsset) {
-      throw new Error('Asset already exists in user\'s ownedAssets')
-    }
-    //
-    const asset = await getAssetById(item)
-    if (asset && asset.pricing.currency === 'USD') {
-      totalPriceUSD += asset.pricing.price
-    } else {
-      throw new Error('Something is wrong with the item currency or price. It may not be in USD. Item ID: ' + item)
-    }
-  }
+  await Promise.all(
+    orderData.map(async (orderItem) => {
+      const existingAsset = user.ownedAssets.find((asset) => asset.assetId.equals(orderItem.itemId))
+      if (existingAsset) {
+        throw new Error('Asset already exists in user\'s ownedAssets')
+      }
+
+      const asset = await getAssetById(orderItem.itemId)
+      const tier = asset.pricing.tiers.find((tier) => tier.name === orderItem.tier)
+
+      if (asset && tier.currency === 'USD' && tier.name === orderItem.tier) {
+        totalPriceUSD += tier.price
+      } else {
+        throw new Error(`Something is wrong with the item currency or price. It may not be in USD. Item ID: ${orderItem.itemId}`)
+      }
+    })
+  )
 
   // Retrieve exchange rates for USD against other currencies considering we are using USD by default in our app
   const USDExchangeRates = await getExchangeRatesFor('USD')
@@ -45,18 +57,26 @@ const createOrder = async (userId, items, paymentMethod) => {
   }
 
   // Create a new order with the provided details
-  const newOrder = new Order({ user: userId, items, amount })
+  const newOrder = new Order({ user: userId, items: orderData.map((orderItem) => ({ item: orderItem.itemId, tier: orderItem.tier })), amount })
   await newOrder.save()
 
   return newOrder
 }
 
-// Retrieve all orders from the database
+/**
+ * Retrieves all orders from the database.
+ * @returns {Promise<Array>} An array of all order objects.
+ */
 const getAllOrders = async () => {
   return await Order.find({})
 }
 
-// Retrieve an order by its ID
+/**
+ * Retrieves an order by its ID.
+ * @param {string} id - The ID of the order.
+ * @returns {Promise<Object>} The order object.
+ * @throws {Error} If the order is not found.
+ */
 const getOrderById = async (id) => {
   const order = await Order.findById(id)
   if (!order) {
@@ -66,6 +86,13 @@ const getOrderById = async (id) => {
   return order
 }
 
+/**
+ * Updates an order by its ID.
+ * @param {string} orderId - The ID of the order.
+ * @param {Object} orderData - The data to update the order with.
+ * @returns {Promise<Object>} The updated order object.
+ * @throws {Error} If the order is not found.
+ */
 const updateOrderById = async (orderId, orderData) => {
   const updatedOrder = await Order.findByIdAndUpdate(orderId, orderData, { new: true })
   if (!updatedOrder) {
@@ -74,7 +101,12 @@ const updateOrderById = async (orderId, orderData) => {
   return updatedOrder
 }
 
-// Delete an order by its ID
+/**
+ * Deletes an order by its ID.
+ * @param {string} id - The ID of the order.
+ * @returns {Promise<Object>} The deleted order object.
+ * @throws {Error} If the order is not found.
+ */
 const deleteOrderById = async (id) => {
   const deletedOrder = await Order.findOneAndDelete({ _id: id })
   if (!deletedOrder) {
@@ -86,22 +118,37 @@ const deleteOrderById = async (id) => {
   return deletedOrder
 }
 
+/**
+ * Completes an order by updating its status to 'complete' and performing additional actions.
+ * @param {string} orderId - The ID of the order to complete.
+ * @returns {Promise<Object>} The updated order object.
+ * @throws {Error} If the order is not found or if there is an error during completion.
+ */
 const completeOrder = async (orderId) => {
   // Update order object to complete
   const updatedOrder = await Order.findByIdAndUpdate(orderId, { status: 'complete' }, { new: true })
   if (!updatedOrder) {
     throw new Error('Order not found')
   }
+
   // Add items in order to users profile
   const userId = updatedOrder.user
-  await Promise.all(updatedOrder.items.map(async (itemId) => {
+  await Promise.all(updatedOrder.items.map(async (orderItem) => {
     try {
-      await addOwnedAssetAsBuyer(userId, itemId)
-
+      // Get asset
+      const asset = await getAssetById(orderItem.item)
+      // Asset creator id
+      const assetCreatorId = asset.createdBy.userId
+      // Asset price for selected tier
+      const assetTierInformation = asset.pricing.tiers.find((tier) => tier.name === orderItem.tier)
+      // Update asset creators balance
+      await updateUserBalance(assetCreatorId, assetTierInformation.price)
+      // Add asset to buyer users profile
+      await addOwnedAssetAsBuyer(userId, orderItem)
       // Insert sold to information to the asset
-      await addSoldToInfoToAsset(itemId, userId)
+      await addSoldToInfoToAsset(orderItem.item, userId)
     } catch (err) {
-      logger.error(`${err.message}, orderId: ${orderId}, itemId: ${itemId}`)
+      logger.error(`${err.message}, orderId: ${orderId}, itemId: ${orderItem.item}`)
     }
   }))
   return updatedOrder

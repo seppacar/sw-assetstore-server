@@ -8,8 +8,6 @@ const authRouter = require('./auth.route')
 const assetRouter = require('./asset.route')
 const ordersRouter = require('./order.route')
 const transactionRouter = require('./transaction.route')
-// Demo
-const demoRouter = require('./demo.route')
 
 // Mount each set of routes on the router
 // TODO: Add authentication middlewares to their routes
@@ -18,8 +16,5 @@ router.use('/auth', authRouter)
 router.use('/assets', assetRouter)
 router.use('/orders', ordersRouter)
 router.use('/transactions', transactionRouter)
-
-// Demo route
-router.use('/demo', demoRouter)
 
 module.exports = router // Export the router instance for use in the application
